@@ -1,0 +1,115 @@
+body {
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  color: darkgreen;
+}
+
+
+.canvas-container {
+  flex:3;
+}
+
+.results-container {
+  width: 70%;
+  height: 100%;
+  background-color: #282c34;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  vertical-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculate-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  /*align-items: center;*/
+}
+
+.form-field {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  padding-block: 10px;
+  padding-left: 10px;
+
+  font-family: "Roboto", sans-serif;
+}
+
+/*
+.form-label {
+  font-size: 0.7vw;
+  text-align: left;
+}
+*/
+
+.error_container {
+  border: 0.1rem solid darkred;
+  margin-top: 1rem;
+  font-size: 0.5rem;
+  padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+  background-color: #f8eff1;
+}
+
+.error_container h4{
+  font-size: 1rem;
+  color:darkred;
+  margin:0;
+  padding:0;
+}
+
+.results {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.result_item_value{
+  border: 1px solid rgba(255, 255, 255, 0.51);
+  border-radius: 0.3rem;
+  /* height: 3rem; */
+  margin: .75rem;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  background-color: rgba(174, 179, 190, 0.35);
+}
+
+.result_item_value h4{
+  font-size: 1.7vw;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+}
+
+.result_item_label h4{
+  font-size: 1.7vw;
+  color: white;
+  margin: 0;
+  padding: 0.5rem;
+  text-align: left;
+}
+

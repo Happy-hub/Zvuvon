@@ -1,18 +1,8 @@
- version: '2.5'
- services:
-   backend:
-     restart: always
-     build:
-       context: ./zvuvon-backend/
-       dockerfile: Dockerfile
-     ports:
-       - "8000:8000"
-     networks:
-       - net
-
+version: "2.5"
+services:
   frontend:
     restart: always
-    command : yarn start
+    command: yarn start
     build:
       context: ./zvuvon-app/
       dockerfile: Dockerfile
@@ -20,9 +10,10 @@
       - "3000:3000"
     depends_on:
       - backend
-    networks:
-      - net
-
-networks:
-  net:
-    driver: bridge
+  backend:
+    restart: always
+    build:
+      context: ./zvuvon-backend/
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
